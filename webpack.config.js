@@ -10,9 +10,10 @@ fs.readdirSync('node_modules')
   });
 
 module.exports = {
+    mode: 'development',
     devtool:'inline-source-map',
     entry:[
-    path.resolve(__dirname,'buildScripts/srcServer')
+    path.resolve(__dirname,'buildScripts/index')
     ],
     target:'node',
     resolve: {
